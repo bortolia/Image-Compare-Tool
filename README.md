@@ -58,4 +58,4 @@ After testing my solutions for individual image comparisons and CSVs, I began re
 
 #### Windows Preview
 
-![Windows](./images/windows_preview.png)
+![Windows](./images/windows_preview.PNG)
