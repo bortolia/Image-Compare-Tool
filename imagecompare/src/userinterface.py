@@ -28,9 +28,13 @@ class Root(tkin.Tk):
 		file_lf = ttk.LabelFrame(self, text='CSV Input')
 		file_lf.grid(column=24, row = 2, columnspan=2)
 		file_btn = ttk.Button(file_lf, text='Browse File', command=self.file_dialog)
-		file_btn.grid(column=1, row = 1)
+		file_btn.grid(column=0, row = 1)
+		#
+		compare_btn = ttk.Button(file_lf, text='Compare', command=self.comp_files)
+		compare_btn.grid(column=1, row = 1)
+		#
 		self.file_label = ttk.Label(file_lf, text='No File Selected')
-		self.file_label.grid(column=1, row=2)
+		self.file_label.grid(column=0, row=2, columnspan=2)
 
 		#Output
 		out_lf = ttk.LabelFrame(self, text='CSV Output Directory')
@@ -41,38 +45,41 @@ class Root(tkin.Tk):
 
 	def file_dialog(self):
 		
-		filename = filedialog.askopenfilename(title='Select CSV File', filetypes=[('CSV files', '*.csv')])
+		self.filename = filedialog.askopenfilename(title='Select CSV File', filetypes=[('CSV files', '*.csv')])
 		
-		if not filename:
+		if not self.filename:
 			self.file_label.configure(text='No File Selected')
 		else:
-			if len(filename) > 40:
+			if len(self.filename) > 40:
 				shortName = ""
-				shortName += filename[0:20]
+				shortName += self.filename[0:20]
 				shortName += "..."
-				shortName += filename[-20:]
+				shortName += self.filename[-20:]
 
 				self.file_label.configure(text=shortName)
 
 			else:
-				self.file_label.configure(text=filename)
+				self.file_label.configure(text=self.filename)
 
-			self.scrollbox_in.printCsv(filename)
+			self.scrollbox_in.printCsv(self.filename)
 			
 			#Parse csv file for comparison of image pairs
-			csv_pairs_list = compare.parse_csv(filename)
-			print(csv_pairs_list)
+			self.csv_pairs_list = compare.parse_csv(self.filename)
 
-			output_pairs_list = []
-			for img1, img2 in csv_pairs_list[1:]:
-				output_pairs_list.append(compare.compare_images(img1,img2))
 
-			print(output_pairs_list)
+	def comp_files(self):
 
-			new_file = compare.write_csv(filename, csv_pairs_list, output_pairs_list)
-			self.scrollbox_out.printCsv(new_file)
-			
-			self.output_dir.delete('1.0', 'end')
-			self.output_dir.insert('1.0', new_file)	
+		if not self.filename:
+			return None
+
+		output_pairs_list = []
+		for img1, img2 in self.csv_pairs_list[1:]:
+			output_pairs_list.append(compare.compare_images(img1,img2))
+
+		new_file = compare.write_csv(self.filename, self.csv_pairs_list, output_pairs_list)
+		self.scrollbox_out.printCsv(new_file)
+		
+		self.output_dir.delete('1.0', 'end')
+		self.output_dir.insert('1.0', new_file)	
 
 

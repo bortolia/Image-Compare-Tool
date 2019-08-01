@@ -34,5 +34,3 @@ class Scrollbox:
 		self.st.insert('1.0', csv_str)
 
 
-
-

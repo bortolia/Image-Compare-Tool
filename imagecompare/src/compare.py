@@ -73,5 +73,3 @@ def write_csv(filename, original_pairs, new_pairs):
 	return out_file_path
 
 
-
-
