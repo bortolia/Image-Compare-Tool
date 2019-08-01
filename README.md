@@ -54,8 +54,8 @@ After testing my solutions for individual image comparisons and CSVs, I began re
 
 #### MacOS Preview
 
-(./images/mac_preview.png)
+![MacOS](./images/mac_preview.png)
 
 #### Windows Preview
 
-(./images/windows_preview.png)
+![Windows](./images/windows_preview.png)
