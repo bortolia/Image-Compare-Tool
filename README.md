@@ -62,7 +62,7 @@ A bulk of my time was spent researching a library to use to handle images in Pyt
 
 After testing my solutions for individual image comparisons and CSVs, I began researching for a suitable GUI library to use. Tkinter was a great choice due to its cross platform capabilities for use on MacOS and Windows. It is also built-in and up-to-date with modern versions of Python.
 
-Later in the dev process, I refactored my code to adopt a MVC design pattern for the UI and overall structure of the application. I also integrated Travis Ci to run my improved unit tests to check that any new code is passing all tests.
+Later in the dev process, I refactored my code to adopt a MVC design pattern for the UI and overall structure of the application. I also integrated Travis Ci to run my improved unit tests to check that any new code is passing all tests. With each commit and push to this repository, it is automatically tested.
 
 #### MacOS Preview
 
