@@ -1,0 +1,9 @@
+image1,image2
+./imagecompare/tests/test_images/aa.png,./imagecompare/tests/test_images/ba.png
+./imagecompare/tests/test_images/g1.png,./imagecompare/tests/test_images/g3.png
+./imagecompare/tests/test_images/ab.png,./imagecompare/tests/test_images/bb.png
+./imagecompare/tests/test_images/test.png,./imagecompare/tests/test_images/test.png
+./imagecompare/tests/test_images/ac.png,./imagecompare/tests/test_images/bc.png
+./imagecompare/tests/test_images/ad.png,./imagecompare/tests/test_images/bd.png
+./imagecompare/tests/test_images/newtoe.jpg,./imagecompare/tests/test_images/notoe.jpg
+./imagecompare/tests/test_images/ac.png,./imagecompare/tests/test_images/bc.png

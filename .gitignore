@@ -3,3 +3,4 @@ __pycache__
 app.py
 *.pyc
 /testing
+out_file.csv

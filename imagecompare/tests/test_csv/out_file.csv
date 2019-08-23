@@ -1,7 +1,9 @@
 image1,image2,similar,elapsed
-./imagecompare/tests/test_images/newtoe.jpg,./imagecompare/tests/test_images/notoe.jpg,0.01814,8.11926
-./imagecompare/tests/test_images/rain.png,./imagecompare/tests/test_images/notoe.jpg,1,0
-./imagecompare/tests/test_images/test.png,./imagecompare/tests/test_images/test.png,0,0.09175
-./imagecompare/tests/test_images/g1.png,./imagecompare/tests/test_images/g2.png,0.00001,0.09243
-./imagecompare/tests/test_images/g1.png,./imagecompare/tests/test_images/g3.png,0.00003,0.08987
-./imagecompare/tests/test_images/rain.png,./imagecompare/tests/test_images/rain.png,0,0.08874
+./imagecompare/tests/test_images/aa.png,./imagecompare/tests/test_images/ba.png,File Not Found,0
+./imagecompare/tests/test_images/g1.png,./imagecompare/tests/test_images/g3.png,0.00003,0.08757
+./imagecompare/tests/test_images/ab.png,./imagecompare/tests/test_images/bb.png,File Not Found,0
+./imagecompare/tests/test_images/test.png,./imagecompare/tests/test_images/test.png,0,0.08542
+./imagecompare/tests/test_images/ac.png,./imagecompare/tests/test_images/bc.png,File Not Found,0
+./imagecompare/tests/test_images/ad.png,./imagecompare/tests/test_images/bd.png,File Not Found,0
+./imagecompare/tests/test_images/newtoe.jpg,./imagecompare/tests/test_images/notoe.jpg,0.01814,7.76046
+./imagecompare/tests/test_images/ac.png,./imagecompare/tests/test_images/bc.png,File Not Found,0
