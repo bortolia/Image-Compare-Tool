@@ -1,0 +1,7 @@
+image1,image2
+./imagecompare/tests/test_images/newtoe.jpg,./imagecompare/tests/test_images/notoe.jpg
+./imagecompare/tests/test_images/rain.png,./imagecompare/tests/test_images/notoe.jpg
+./imagecompare/tests/test_images/test.png,./imagecompare/tests/test_images/test.png
+./imagecompare/tests/test_images/g1.png,./imagecompare/tests/test_images/g2.png
+./imagecompare/tests/test_images/g1.png,./imagecompare/tests/test_images/g3.png
+./imagecompare/tests/test_images/rain.png,./imagecompare/tests/test_images/rain.png
