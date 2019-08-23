@@ -2,5 +2,5 @@
 __pycache__
 app.py
 *.pyc
-/testing
-out_file.csv
+/imagecompare/testing/
+/imagecompare/tests/out_file.csv
