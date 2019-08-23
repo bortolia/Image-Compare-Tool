@@ -3,4 +3,4 @@ __pycache__
 app.py
 *.pyc
 /imagecompare/testing/
-/imagecompare/tests/out_file.csv
+/imagecompare/tests/test_csv/out_file.csv
